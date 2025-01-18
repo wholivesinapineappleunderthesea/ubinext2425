@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include=".clang-format" />
+    <None Include="codebase\Gfx\GfxSoftwareRasterize.inl">
+      <Filter>codebase\Gfx</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="codebase">
+      <UniqueIdentifier>{bf46461b-64f8-4b3b-9466-a2f399e3785d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Platform">
+      <UniqueIdentifier>{c375360f-a1e7-4a6c-9780-26309c381ead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Platform\PlatformWin64">
+      <UniqueIdentifier>{e0f91547-9322-4e7c-b905-2971ed431afe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Platform\PlatformWin64\PrecompiledHeaders">
+      <UniqueIdentifier>{ddcda65d-713c-4536-a98d-705b687e6956}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Math">
+      <UniqueIdentifier>{51c51503-4fba-4210-90c6-8c2a65ecb5c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Gfx">
+      <UniqueIdentifier>{c39d796f-675c-4c51-b1d8-6389dccdcb32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Singleton">
+      <UniqueIdentifier>{4ec36549-0914-41df-94af-0d107ef3686d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\GameManager">
+      <UniqueIdentifier>{9fbb0b32-613b-48dc-a2b6-a49292b52ed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\World">
+      <UniqueIdentifier>{d0a394e5-b047-47b8-88ca-7bed96281be9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Entity">
+      <UniqueIdentifier>{bc4b6fcf-4fe7-40b4-9cce-813ea047a5b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Component">
+      <UniqueIdentifier>{beb11326-9664-4a0e-9867-c67961e470f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Component\CameraComponent">
+      <UniqueIdentifier>{5fc44140-49d1-4584-b81a-8b62d8e79b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Component\HullComponent">
+      <UniqueIdentifier>{e718bb26-6d10-46d9-9c8d-7678c1ae7f71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Input">
+      <UniqueIdentifier>{c59f489a-8001-466f-852e-396b326eba3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Component\Pawn">
+      <UniqueIdentifier>{a369b6ba-a57b-4315-9fc4-e01a0713c94f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Component\StaticMeshComponent">
+      <UniqueIdentifier>{fa8c603c-6297-4b41-a5ba-20e7ee188e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Resources">
+      <UniqueIdentifier>{7136f4f2-f471-4a1b-a605-d41cacef5537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Component\ProjectileComponent">
+      <UniqueIdentifier>{aeacace9-2be3-4bd6-8b1a-c48ce58929f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Net">
+      <UniqueIdentifier>{f0395692-7c52-44e7-b385-00083d4671cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Containers">
+      <UniqueIdentifier>{092aaf15-d217-4dc6-8eb3-71556fd71ca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Object">
+      <UniqueIdentifier>{40bab470-f24b-4f6e-a782-a28fa343ede3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Component\WeaponComponent">
+      <UniqueIdentifier>{17046468-7c9f-4d4d-a59a-8d061ad1f4cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Component\HealthComponent">
+      <UniqueIdentifier>{e8d1e197-212f-4c92-a24a-9a8c668f748f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\UI">
+      <UniqueIdentifier>{fdaa10f6-d758-45d0-b32f-50105d95dab4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Component\AnimatedMeshComponent">
+      <UniqueIdentifier>{06423dca-b2cd-4210-8600-7d625b0aebb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codebase\Component\EnvPushComponent">
+      <UniqueIdentifier>{eb605f10-0914-40ba-95a9-c7f81f890712}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="codebase\OxygenPCH.cc">
+      <Filter>codebase</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Platform\PlatformWin64\Platform.cc">
+      <Filter>codebase\Platform\PlatformWin64</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Gfx\GfxRenderer.cc">
+      <Filter>codebase\Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\World\World.cc">
+      <Filter>codebase\World</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\World\WorldLoader.cc">
+      <Filter>codebase\World</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\GameManager\GameManager.cc">
+      <Filter>codebase\GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\World\BSP.cc">
+      <Filter>codebase\World</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Entity\Entity.cc">
+      <Filter>codebase\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Component\Component.cc">
+      <Filter>codebase\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Component\HullComponent\HullComponent.cc">
+      <Filter>codebase\Component\HullComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Component\CameraComponent\CameraComponent.cc">
+      <Filter>codebase\Component\CameraComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Input\InputManager.cc">
+      <Filter>codebase\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Component\Pawn\Pawn.cc">
+      <Filter>codebase\Component\Pawn</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Component\StaticMeshComponent\StaticMeshComponent.cc">
+      <Filter>codebase\Component\StaticMeshComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Resources\ResourceManager.cc">
+      <Filter>codebase\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Component\ProjectileComponent\ProjectileComponent.cc">
+      <Filter>codebase\Component\ProjectileComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Net\NetSystem.cc">
+      <Filter>codebase\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Object\ObjectManager.cc">
+      <Filter>codebase\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Component\WeaponComponent\WeaponComponent.cc">
+      <Filter>codebase\Component\WeaponComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Component\HealthComponent\HealthComponent.cc">
+      <Filter>codebase\Component\HealthComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\UI\UIManager.cc">
+      <Filter>codebase\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Component\AnimatedMeshComponent\AnimatedMeshComponent.cc">
+      <Filter>codebase\Component\AnimatedMeshComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="codebase\Component\EnvPushComponent\EnvPushComponent.cc">
+      <Filter>codebase\Component\EnvPushComponent</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="codebase\OxygenPCH.h">
+      <Filter>codebase</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Platform\PlatformWin64\PrecompiledHeaders\PCH.h">
+      <Filter>codebase\Platform\PlatformWin64\PrecompiledHeaders</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Platform\Platform.h">
+      <Filter>codebase\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Platform\InternalPCHBase.h">
+      <Filter>codebase\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\OxygenTypes.h">
+      <Filter>codebase</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Math\Defs.h">
+      <Filter>codebase\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Platform\PlatformWin64\PrivateMembers.h">
+      <Filter>codebase\Platform\PlatformWin64</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Gfx\GfxRenderer.h">
+      <Filter>codebase\Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Singleton\EngineSingletons.h">
+      <Filter>codebase\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Singleton\Singleton.h">
+      <Filter>codebase\Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\World\World.h">
+      <Filter>codebase\World</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\World\WorldLoader.h">
+      <Filter>codebase\World</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\GameManager\GameManager.h">
+      <Filter>codebase\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\World\BSP.h">
+      <Filter>codebase\World</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Entity\Entity.h">
+      <Filter>codebase\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Component\Component.h">
+      <Filter>codebase\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Component\HullComponent\HullComponent.h">
+      <Filter>codebase\Component\HullComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Component\CameraComponent\CameraComponent.h">
+      <Filter>codebase\Component\CameraComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Input\InputManager.h">
+      <Filter>codebase\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Component\Pawn\Pawn.h">
+      <Filter>codebase\Component\Pawn</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Component\StaticMeshComponent\StaticMeshComponent.h">
+      <Filter>codebase\Component\StaticMeshComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Resources\ResourceManager.h">
+      <Filter>codebase\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Resources\StaticMeshResource.h">
+      <Filter>codebase\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Component\ProjectileComponent\ProjectileComponent.h">
+      <Filter>codebase\Component\ProjectileComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Net\NetSystem.h">
+      <Filter>codebase\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Containers\SPSCQueue.h">
+      <Filter>codebase\Containers</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Object\ManagedObject.h">
+      <Filter>codebase\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Object\Object.h">
+      <Filter>codebase\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Object\ObjectManager.h">
+      <Filter>codebase\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Math\Hash.h">
+      <Filter>codebase\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Math\Random.h">
+      <Filter>codebase\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Component\WeaponComponent\WeaponComponent.h">
+      <Filter>codebase\Component\WeaponComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Component\HealthComponent\HealthComponent.h">
+      <Filter>codebase\Component\HealthComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\UI\UIManager.h">
+      <Filter>codebase\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Component\AnimatedMeshComponent\AnimatedMeshComponent.h">
+      <Filter>codebase\Component\AnimatedMeshComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Resources\AnimatedMeshResource.h">
+      <Filter>codebase\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="codebase\Component\EnvPushComponent\EnvPushComponent.h">
+      <Filter>codebase\Component\EnvPushComponent</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

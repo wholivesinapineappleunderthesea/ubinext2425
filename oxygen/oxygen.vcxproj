@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".clang-format" />
+    <None Include="codebase\Gfx\GfxSoftwareRasterize.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="codebase\Component\AnimatedMeshComponent\AnimatedMeshComponent.cc" />
+    <ClCompile Include="codebase\Component\CameraComponent\CameraComponent.cc" />
+    <ClCompile Include="codebase\Component\Component.cc" />
+    <ClCompile Include="codebase\Component\EnvPushComponent\EnvPushComponent.cc" />
+    <ClCompile Include="codebase\Component\HealthComponent\HealthComponent.cc" />
+    <ClCompile Include="codebase\Component\HullComponent\HullComponent.cc" />
+    <ClCompile Include="codebase\Component\Pawn\Pawn.cc" />
+    <ClCompile Include="codebase\Component\ProjectileComponent\ProjectileComponent.cc" />
+    <ClCompile Include="codebase\Component\StaticMeshComponent\StaticMeshComponent.cc" />
+    <ClCompile Include="codebase\Component\WeaponComponent\WeaponComponent.cc" />
+    <ClCompile Include="codebase\Entity\Entity.cc" />
+    <ClCompile Include="codebase\GameManager\GameManager.cc" />
+    <ClCompile Include="codebase\Gfx\GfxRenderer.cc" />
+    <ClCompile Include="codebase\Input\InputManager.cc" />
+    <ClCompile Include="codebase\Net\NetSystem.cc" />
+    <ClCompile Include="codebase\Object\ObjectManager.cc" />
+    <ClCompile Include="codebase\OxygenPCH.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="codebase\Platform\PlatformWin64\Platform.cc" />
+    <ClCompile Include="codebase\Resources\ResourceManager.cc" />
+    <ClCompile Include="codebase\UI\UIManager.cc" />
+    <ClCompile Include="codebase\World\BSP.cc" />
+    <ClCompile Include="codebase\World\World.cc" />
+    <ClCompile Include="codebase\World\WorldLoader.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="codebase\Component\AnimatedMeshComponent\AnimatedMeshComponent.h" />
+    <ClInclude Include="codebase\Component\CameraComponent\CameraComponent.h" />
+    <ClInclude Include="codebase\Component\Component.h" />
+    <ClInclude Include="codebase\Component\EnvPushComponent\EnvPushComponent.h" />
+    <ClInclude Include="codebase\Component\HealthComponent\HealthComponent.h" />
+    <ClInclude Include="codebase\Component\HullComponent\HullComponent.h" />
+    <ClInclude Include="codebase\Component\Pawn\Pawn.h" />
+    <ClInclude Include="codebase\Component\ProjectileComponent\ProjectileComponent.h" />
+    <ClInclude Include="codebase\Component\StaticMeshComponent\StaticMeshComponent.h" />
+    <ClInclude Include="codebase\Component\WeaponComponent\WeaponComponent.h" />
+    <ClInclude Include="codebase\Containers\SPSCQueue.h" />
+    <ClInclude Include="codebase\Entity\Entity.h" />
+    <ClInclude Include="codebase\GameManager\GameManager.h" />
+    <ClInclude Include="codebase\Gfx\GfxRenderer.h" />
+    <ClInclude Include="codebase\Input\InputManager.h" />
+    <ClInclude Include="codebase\Math\Defs.h" />
+    <ClInclude Include="codebase\Math\Hash.h" />
+    <ClInclude Include="codebase\Math\Random.h" />
+    <ClInclude Include="codebase\Net\NetSystem.h" />
+    <ClInclude Include="codebase\Object\ManagedObject.h" />
+    <ClInclude Include="codebase\Object\Object.h" />
+    <ClInclude Include="codebase\Object\ObjectManager.h" />
+    <ClInclude Include="codebase\OxygenPCH.h" />
+    <ClInclude Include="codebase\OxygenTypes.h" />
+    <ClInclude Include="codebase\Platform\InternalPCHBase.h" />
+    <ClInclude Include="codebase\Platform\Platform.h" />
+    <ClInclude Include="codebase\Platform\PlatformWin64\PrecompiledHeaders\PCH.h" />
+    <ClInclude Include="codebase\Platform\PlatformWin64\PrivateMembers.h" />
+    <ClInclude Include="codebase\Resources\AnimatedMeshResource.h" />
+    <ClInclude Include="codebase\Resources\ResourceManager.h" />
+    <ClInclude Include="codebase\Resources\StaticMeshResource.h" />
+    <ClInclude Include="codebase\Singleton\EngineSingletons.h" />
+    <ClInclude Include="codebase\Singleton\Singleton.h" />
+    <ClInclude Include="codebase\UI\UIManager.h" />
+    <ClInclude Include="codebase\World\BSP.h" />
+    <ClInclude Include="codebase\World\World.h" />
+    <ClInclude Include="codebase\World\WorldLoader.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{965b3b1d-0663-4d55-9cec-99c22a037dfc}</ProjectGuid>
+    <RootNamespace>oxygen</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)codebase;$(SolutionDir)GameTest;$(IncludePath)</IncludePath>
+    <IntDir>$(SolutionDir)buildintermediate\$(ProjectName)\$(Platform)_WINDOWSDBG\</IntDir>
+    <OutDir>$(SolutionDir)buildintermediate\out\$(ProjectName)\$(Platform)_WINDOWSDBG\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)codebase;$(SolutionDir)GameTest;$(IncludePath)</IncludePath>
+    <IntDir>$(SolutionDir)buildintermediate\$(ProjectName)\$(Platform)_WINDOWSREL\</IntDir>
+    <OutDir>$(SolutionDir)buildintermediate\out\$(ProjectName)\$(Platform)_WINDOWSREL\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;OXYBUILDDEBUG;OXYBUILDARCHWINDOWSX64;OXYBUILDUBIAPIBACKEND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>OxygenPCH.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet />
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent />
+    <PostBuildEvent />
+    <Lib>
+      <AdditionalDependencies>ws2_32.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;OXYBUILDRELEASE;OXYBUILDARCHWINDOWSX64;OXYBUILDUBIAPIBACKEND;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>OxygenPCH.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet />
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent />
+    <PostBuildEvent />
+    <Lib>
+      <AdditionalDependencies>ws2_32.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

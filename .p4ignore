@@ -1,0 +1,7 @@
+/.vs
+/buildintermediate
+/build/*.dll
+/build/*.exe
+/build/*.pdb
+
+/oxygen/jack
