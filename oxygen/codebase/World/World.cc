@@ -676,7 +676,7 @@ namespace oxygen
 	{
 		if (m_playerStarts.empty())
 			return {};
-		auto rnd = RandomS32(0, m_playerStarts.size() - 1);
+		auto rnd = RandomS32(0, static_cast<oxyS32>(m_playerStarts.size() - 1));
 		return m_playerStarts[rnd];
 	}
 	auto World::FindLeaf(const oxyVec3& position,
